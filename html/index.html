@@ -9,13 +9,11 @@
 </head>
 <body>
 Pip镜像配置</p>
-升级 pip 到最新的版本 (>=10.0.0) 后进行配置：</p>
-python -m pip install --upgrade pip</p>
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</p>
-如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：</p>
 python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip</p>
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</p>
+</p>
 Anaconda 镜像配置</p>
-Windows 用户无法直接创建名为 .condarc 的文件，可先执行 conda config --set show_channel_urls yes 生成该文件之后再修改。</p>
+conda config --set show_channel_urls yes 之后再修改.condarc 文件。</p>
 channels:</p>
   - defaults</p>
 show_channel_urls: true</p>
@@ -31,6 +29,20 @@ custom_channels:</p>
   pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
   pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
   simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
-    <script src="./test.js" async></script>
+</p>
+升级Conda</p>
+conda update --all</p>
+安装Pytorch</p>
+conda install pytorch torchvision torchaudio cudatoolkit -c pytorch</p>
+pip install numpy matplotlib pillow pandas jupyter</p>
+jupyter notebook</p>
+清楚多余</p>
+conda clean --all</p>
+</p>
+测试CUDA</p>
+python</p>
+import torch</p>
+torch.cuda.empty_cache()</p>
+print("GPU cache cleared successfully")</p>
 </body>
 </html>
