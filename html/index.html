@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pytorch</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    My first website and show cat!!!!
+Pip镜像配置</p>
+升级 pip 到最新的版本 (>=10.0.0) 后进行配置：</p>
+python -m pip install --upgrade pip</p>
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</p>
+如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：</p>
+python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip</p>
+Anaconda 镜像配置</p>
+Windows 用户无法直接创建名为 .condarc 的文件，可先执行 conda config --set show_channel_urls yes 生成该文件之后再修改。</p>
+channels:</p>
+  - defaults</p>
+show_channel_urls: true</p>
+default_channels:</p>
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</p>
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</p>
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</p>
+custom_channels:</p>
+  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
+  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
+  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
+  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
+  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
+  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
+  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</p>
 
     <img src="./img/cat.webp" alt="">
 
